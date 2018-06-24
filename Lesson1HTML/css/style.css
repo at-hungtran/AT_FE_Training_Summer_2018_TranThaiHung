@@ -4,16 +4,26 @@
   max-width: 1280px;
 }
 
-a {
-  text-decoration: none;
+.container::after {
+  content: "";
+  display: block;
+  clear: both;
 }
 
 .clearfix {
   clear: both;
 }
 
+a {
+  text-decoration: none;
+}
+
 .page-header {
   padding-top: 10px;
+}
+
+logo {
+  text-align: none;
 }
 
 .image-logo {
@@ -78,7 +88,7 @@ a {
 
 .menu-item {
   float: left;
-  padding: 28px 26px 25px ;
+  padding: 28px 26px 20px;
   width: auto;
   box-sizing: border-box;
   text-transform: uppercase;
@@ -86,6 +96,21 @@ a {
   font-family: Arial;
   border-right: 1px solid;
   border-color: rgb(233, 233, 233);
+}
+
+.menu-item a {
+  position: relative;
+  transition: all .4s;
+}
+
+.menu-item a::after {
+  width: 100%;
+  height: 100%;
+  content: "";
+  position: absolute;
+  padding: 28px 26px 25px;
+  left: -25px;
+  top: -25px;
 }
 
 .menu-item:last-child {
@@ -384,11 +409,13 @@ a {
 .license p {
   float: left;
   color: white;
+  text-align: none;
 }
 
 .license span {
   float: right;
   color: white;
+  text-align: none;
 }
 
 .license span a {
@@ -396,6 +423,21 @@ a {
 }
 
 @media all and (min-width: 298px) {
+  .logo {
+    margin: 0 10%;
+    width: 80%;
+    overflow: auto;
+  }
+
+  .contract {
+    padding-top: 15px;
+    font-size: 6pt;
+    margin: 0 10%;
+    width: 80%;
+    float: none;
+    box-sizing: border-box;
+  }
+
   .image-logo {
     width: 40px;
     height: 40px;
@@ -415,12 +457,6 @@ a {
     padding: 5px;
     font-size: 8pt;
     line-height: 110%;
-  }
-
-  .contract {
-    padding-top: 15px;
-    float: left;
-    font-size: 6pt;
   }
 
   .contract::before {
@@ -560,19 +596,36 @@ a {
   }
 
   .license {
-    height: 30px;
+    height: auto;
     line-height: 30px;
     font-size: 8pt;
+    text-align: center;
   }
 
-  .license span{
-    float: left;
+  .license p {
+    float: none;
+  }
+
+  .license span {
+    float: none;
   }
 }
 
 @media all and (min-width: 480px) {
   .contract {
+    width: auto;
     float: right;
+    margin: 0;
+  }
+
+  .logo {
+    width: auto;
+    float: left;
+    margin: 0;
+  }
+
+  .license p {
+    float: left;
   }
 
   .license span {
@@ -653,7 +706,7 @@ a {
     width: auto;
     box-sizing: border-box;
     float: left;
-    padding: 28px 22px 28px ;
+    padding: 28px 22px 20px ;
     font-size: 9pt;
     border-right: 1px solid;
     border-color: rgb(233, 233, 233);
@@ -746,7 +799,7 @@ a {
     font-size: 15pt;
   }
 
-  .footer-list a{
+  .footer-list a {
     font-size: 10pt;
   }
 
@@ -761,3 +814,13 @@ a {
   }
 }
 
+@media all and (min-width: 1240px) {
+  .container {
+    margin: 0 auto;
+    max-width: 1240px;
+  }
+
+  .service-item h4 a{
+    font-size: 16pt;
+  }  
+}
