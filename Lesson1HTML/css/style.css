@@ -424,16 +424,16 @@ logo {
 
 @media all and (min-width: 298px) {
   .logo {
-    margin: 0 10%;
-    width: 80%;
+    width: 210px;
+    margin: 0 auto;
     overflow: auto;
   }
 
   .contract {
     padding-top: 15px;
     font-size: 6pt;
-    margin: 0 10%;
-    width: 80%;
+    margin: 0 auto;
+    width: 204px;
     float: none;
     box-sizing: border-box;
   }
