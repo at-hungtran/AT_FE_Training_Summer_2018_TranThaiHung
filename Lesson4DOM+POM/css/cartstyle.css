@@ -89,7 +89,7 @@ td {
   width: calc(100%/3);
 }
 
-.body-table {
+#body-table {
   background: #ffffff;
   height: 50px;
 }

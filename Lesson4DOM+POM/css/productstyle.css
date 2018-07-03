@@ -131,7 +131,8 @@ a {
 }
 
 .add-to-cart {
-  width: 100%;
+  margin: 0 auto;
+  display: block;
   border: none;
   background: #ffffff;
   outline: none;
