@@ -1,0 +1,61 @@
+.contract {
+  &::before {
+  content: "";
+  width: 15px;
+  height: 15px;
+  float: left;
+  margin-right: 5px;
+  background-image: url("../images/icon-phone320.png");
+  }
+}
+
+.icon-youtube {
+  @extend %icon-social-shared;
+  background: url("../images/icon-youtube.png") no-repeat;
+  display: block;
+}
+
+.icon-facebook {
+  @extend %icon-social-shared;
+  background: url("../images/icon-facebook.png") no-repeat;
+  display: block;
+}
+
+.icon-google {
+  @extend %icon-social-shared;
+  background: url("../images/icon-google.png") no-repeat;
+  display: block;
+}
+
+.icon-footer-facebook {
+  @extend %icon-social-shared;
+  background: url('../images/icon-facebook-footer.png') no-repeat;
+}
+
+.icon-footer-google {
+  @extend %icon-social-shared;
+  background: url('../images/icon-google-footer.png') no-repeat;
+}
+
+.icon-footer-youtube {
+  @extend %icon-social-shared;
+  background: url('../images/icon-youtube-footer.png') no-repeat;
+}
+
+.icon-menu {
+  margin-top: 15px;
+  @extend %icon-social-shared;
+  display: none;
+  background: url("../images/menu-button.png") no-repeat;
+}
+
+.icon-more {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 15px;
+  height: 15px;
+  background-image: url('../images/icon-more.png');
+  background-repeat: no-repeat;
+  display: block;
+}
