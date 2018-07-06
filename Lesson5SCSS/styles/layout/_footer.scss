@@ -9,7 +9,7 @@
     float: left;
     text-align: none;
     box-sizing: border-box;
-  
+
     h4 {
       padding-bottom: 30px;
       font-size: 18pt;
@@ -18,7 +18,7 @@
       text-transform: uppercase;
     }
   }
-  
+
   .footer-list {
     a {
       color: $footer-text-color;
@@ -26,7 +26,7 @@
       font-size: 12pt;
     }
   }
-  
+
   .footer-list-item {
     padding-bottom: 20px;
     &::before {
@@ -36,7 +36,7 @@
       font-size: 20px;
     }
   }
-  
+
   .social-item-footer {
     padding-bottom: 8px;
 
@@ -46,7 +46,7 @@
       padding-left: 8px;
     }
   }
-  
+
   .license {
     height: auto;
     border-top: 1px solid;
@@ -80,13 +80,13 @@
         font-size: 14pt;
       }
     }
-    
+
     .footer-list {
       a {
         font-size: 10pt;
       }
     }
-    
+
     .social-item-footer {
       padding-bottom: 8px;
     }
@@ -101,23 +101,19 @@
   .page-footer {
     margin-top: 40px;
     height: auto;
-  
+
     .information-item {
       h4 {
         font-size: 12pt;
       }
     }
-    
+
     .footer-list {
       a {
         font-size: 8pt;
       }
     }
-    
-    .social-item-footer {
-      padding-bottom: 8px;
-    }
-    
+
     .license {
       font-size: 8pt;
     }
@@ -130,37 +126,35 @@
       padding: 30px 0 10px;
       width: 100%;
       text-align: center;
-    
+
       h4 {
         padding-bottom: 15px;
         font-size: 12pt;
       }
     }
-    
+
     .footer-list {
       a {
         font-size: 10pt;
       }
     }
-    
+
     .footer-list-item {
       padding-bottom: 15px;
     }
-    
+
     .social-item-footer {
       padding-bottom: 8px;
-  
+
       a span {
         padding-left: 8px;
       }
     }
-    
+
     .license {
       text-align: center;
-      font-size: 8pt;
 
-      p,
-      span {
+      p, span {
         float: none;
       }
     }

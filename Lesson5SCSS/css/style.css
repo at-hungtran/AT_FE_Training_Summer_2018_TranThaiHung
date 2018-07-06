@@ -242,10 +242,7 @@ a {
   .page-header .icon-menu {
     display: block;
   }
-  .page-header .menu-item {
-    display: none;
-  }
-  .page-header .social-item {
+  .page-header .menu-item, .page-header .social-item {
     display: none;
   }
 }
@@ -292,17 +289,13 @@ a {
 @media all and (max-width: 600px) {
   .page-header .logo {
     overflow: auto;
-    margin: 0 auto;
     width: 235px;
+    margin: 0 auto;
     display: block;
   }
   .page-header .logo .text-logo {
     float: left;
     padding: 7px;
-  }
-  .page-header .logo .text-logo a {
-    font-size: 8pt;
-    color: #0d1d25;
   }
   .page-header .logo .text-logo h1 a {
     font-size: 13pt;
@@ -364,9 +357,6 @@ a {
 @media all and (max-width: 890px) {
   .sidebar-left {
     width: 100%;
-  }
-  .sidebar-left .adults-item {
-    padding: 11px 22px;
   }
 }
 .page-footer {
@@ -457,9 +447,6 @@ a {
   .page-footer .footer-list a {
     font-size: 8pt;
   }
-  .page-footer .social-item-footer {
-    padding-bottom: 8px;
-  }
   .page-footer .license {
     font-size: 8pt;
   }
@@ -488,10 +475,8 @@ a {
   }
   .page-footer .license {
     text-align: center;
-    font-size: 8pt;
   }
-  .page-footer .license p,
-.page-footer .license span {
+  .page-footer .license p, .page-footer .license span {
     float: none;
   }
 }
@@ -578,7 +563,7 @@ a {
 .sidebar-left-form {
   margin-top: 22px;
   background: #d9e4e9;
-  padding: 27px 20px 21px 20px;
+  padding: 27px 20px 21px;
 }
 .sidebar-left-form h4 {
   font-size: 18pt;

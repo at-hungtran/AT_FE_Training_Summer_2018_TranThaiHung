@@ -32,7 +32,7 @@ a {
       width: 74px;
       height: 74px;
     }
-  
+
     .text-logo {
       float: left;
       padding: 10px;
@@ -52,7 +52,7 @@ a {
       }
     }
   }
-  
+
   .contact {
     padding-top: 25px;
     float: right;
@@ -79,7 +79,7 @@ a {
       font-family: Arial;
     }
   }
-  
+
   .navigation {
     width: 100%;
     height: 67px;
@@ -88,7 +88,7 @@ a {
     border-bottom: 1px solid;
     border-color: $border-item-nav-color;
   }
-  
+
   .menu-item {
     float: left;
     padding: 28px 26px 20px;
@@ -99,7 +99,7 @@ a {
     font-family: Arial;
     border-right: 1px solid;
     border-color: $border-item-nav-color;
-  
+
     a {
       position: relative;
       transition: all .4s;
@@ -114,12 +114,12 @@ a {
       }
     }
   }
-  
+
   .menu-item {
     &:last-child {
       border-right: none;
     }
-  
+
     a {
       color: $nav-item-color;
       &:hover {
@@ -139,7 +139,7 @@ a {
   .page-header {
     .logo {
       text-align: none;
-  
+
       .image-logo {
         width: 50px;
         height: 50px;
@@ -152,7 +152,7 @@ a {
           font-size: 10pt;
           color: $text-color;
         }
-  
+
         h1 { 
           a {
             font-size: 15pt;
@@ -207,11 +207,7 @@ a {
       display: block;
     }
     
-    .menu-item {
-      display: none;
-    }
-  
-    .social-item {
+    .menu-item, .social-item {
       display: none;
     }
   }
@@ -237,15 +233,16 @@ a {
         width: 40px;
         height: 40px;
       }
-    
+
       .text-logo {
         float: left;
         padding: 7px;
+
         a {
           font-size: 8pt;
           color: $text-color;
         }
-  
+
         h1 { 
           a {
             font-size: 13pt;
@@ -277,18 +274,14 @@ a {
   .page-header {
     .logo {
       overflow: auto;
-      margin: 0 auto;
       width: 235px;
+      margin: 0 auto;
       display: block;
 
       .text-logo {
         float: left;
         padding: 7px;
-        a {
-          font-size: 8pt;
-          color: $text-color;
-        }
-  
+
         h1 { 
           a {
             font-size: 13pt;
