@@ -1,0 +1,50 @@
+.breadcrumb {
+  width: 100%;
+  height: 160px;
+  background : url("../images/backgroup-breadcrumb.png") no-repeat;
+  background-size: cover;
+  position: relative;
+  text-transform: uppercase;
+
+  .breadcrumb-list {
+    position: absolute;
+    top: 50%;
+    color: $breadcrumb-color;
+
+    a {
+      color: $breadcrumb-color;
+    }
+  }
+  
+  .breadcrumb-item {
+    font-size: 12pt;
+    float: left;
+  }
+  
+  .breadcrumb-item+.breadcrumb-item {
+    &::before {
+      content: "/\00a0";
+      padding: 8px;
+    }
+  }
+}
+
+@media all and (max-width: 1024px) {
+  .breadcrumb {
+    height: 130px;
+    
+    .breadcrumb-item {
+      font-size: 10pt;
+    }
+  }
+}
+
+@media all and (max-width: 800px) {
+  .breadcrumb {
+    height: 100px;
+    
+    .breadcrumb-item {
+      font-size: 8pt;
+    }
+  }
+}

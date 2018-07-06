@@ -1,0 +1,8 @@
+.form-book-schedule input[type='submit'] {
+  @extend %buton-shared;
+  margin: 0 30%;
+  box-sizing: border-box;
+  border: none;
+  font-weight: bold;
+  font-size: 14pt;
+}

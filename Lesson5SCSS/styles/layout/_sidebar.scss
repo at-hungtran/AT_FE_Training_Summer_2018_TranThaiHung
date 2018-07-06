@@ -1,0 +1,65 @@
+.sidebar-left{
+  width: 25%;
+  float: left;
+
+  .sidebar-left-item {
+    h4 {
+      background: $background-sidebar-color;
+      text-transform: uppercase;
+      font-size: 12pt;
+      padding: 21px;
+
+      span {
+        float: right;
+      }
+    }
+  }
+  
+  .adults-list {
+    padding: 22px 0;
+  }
+
+  .adults-item {
+    padding: 11px 22px;
+    font-size: 12pt;
+    &::before {
+      content: "•";
+      color: #868e92;
+      padding-right: 10px;
+      font-size: 20px;
+    }
+
+    a {
+      color: #0d1d25;
+    }
+  }
+}
+
+@media all and (max-width: 1024px) {
+  .sidebar-left{
+    .sidebar-left-item {
+      h4 {
+        font-size: 10pt;
+      }
+    }
+    
+    .adults-list {
+      padding: 18px 0;
+    }
+    
+    .adults-item {
+      padding: 11px 22px;
+      font-size: 8pt;
+    }
+
+    .form-book-schedule input[type='submit'] {
+      font-size: 10pt;
+    }
+  }
+}
+
+@media all and (max-width: 890px) {
+  .sidebar-left{
+    width: 100%;
+  }
+}

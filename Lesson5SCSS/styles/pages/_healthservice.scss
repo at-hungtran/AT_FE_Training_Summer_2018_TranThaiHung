@@ -1,0 +1,102 @@
+.page-main-content {
+  margin-top: 76px;
+}
+
+.service {
+  width: 75%;
+  padding-top: 0;
+  float: left;
+
+  .service-item {
+    width: calc(100%/3);
+    height: auto;
+    padding: 0 0 22px 22px;
+    float: left;
+    box-sizing: border-box;
+
+    a {
+      img {
+        width: 100%;
+        height: auto;
+      }
+    }
+
+    h4 {
+      padding: 25px 20px 0px;
+      font-size: 16pt;
+      font-weight: bold;
+      text-transform: uppercase;
+
+      a {
+        color: #282828;
+      }
+    }
+
+    p {
+      padding: 20px 20px 27px;
+      font-size: 13pt;
+      line-height: 140%;
+    }
+  }
+  
+  .border-service-item {
+    border: 1px solid;
+    border-color: #ebebeb;
+    position: relative;
+  }
+  
+  .icon-more {
+    width: 15px;
+    height: 15px;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    background-image: url('../images/icon-more.png');
+    background-repeat: no-repeat;
+    display: block;
+  } 
+}
+
+@media all and (max-width: 1260px) {
+  .service {
+    .service-item {
+      h4 {
+        padding: 20px 20px 0px;
+        font-size: 10pt;
+      }
+  
+      p {
+        padding: 20px 20px 27px;
+        font-size: 9pt;
+        line-height: 140%;
+      }
+    }
+  }
+}
+
+@media all and (max-width: 890px) {
+  .service {
+    width: 100%;
+    margin-left: 0 -11px;
+
+    .service-item {
+      padding: 11px;
+    }
+  }
+}
+
+@media all and (max-width: 680px) {
+  .service {
+    .service-item {
+      width: calc(100%/2);
+    }
+  }
+}
+
+@media all and (max-width: 500px) {
+  .service {
+    .service-item {
+      width: 100%;
+    }
+  }
+}

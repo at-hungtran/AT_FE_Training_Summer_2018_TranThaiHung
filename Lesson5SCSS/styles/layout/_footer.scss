@@ -1,0 +1,162 @@
+.page-footer {
+  margin-top: 40px;
+  height: auto;
+  background: $primary-color;
+
+  .information-item {
+    width: calc(100%/3);
+    padding: 50px 0 20px;
+    float: left;
+    text-align: none;
+    box-sizing: border-box;
+
+    h4 {
+      padding-bottom: 30px;
+      font-size: 18pt;
+      font-weight: bold;
+      color: $footer-text-color;
+      text-transform: uppercase;
+    }
+  }
+
+  .footer-list {
+    a {
+      color: $footer-text-color;
+      text-transform: uppercase;
+      font-size: 12pt;
+    }
+  }
+
+  .footer-list-item {
+    padding-bottom: 20px;
+    &::before {
+      content: "•";
+      color: $footer-text-color;
+      padding-right: 5px;
+      font-size: 20px;
+    }
+  }
+
+  .social-item-footer {
+    padding-bottom: 8px;
+
+    a span {
+      display: inline-block;
+      vertical-align: middle;
+      padding-left: 8px;
+    }
+  }
+
+  .license {
+    height: auto;
+    border-top: 1px solid;
+    border-color: rgb(129, 209, 249);
+    text-transform: uppercase;
+    line-height: 57px;
+    font-size: 12pt;
+
+    p {
+      float: left;
+      color: $footer-text-color;
+      text-align: none;
+    }
+
+    span {
+      float: right;
+      color: $footer-text-color;
+      text-align: none;
+    }
+
+    span a {
+      color: rgb(125, 241, 207);
+    }
+  }
+}
+
+@media all and (max-width: 1024px) {
+  .page-footer {
+    .information-item {
+      h4 {
+        font-size: 14pt;
+      }
+    }
+
+    .footer-list {
+      a {
+        font-size: 10pt;
+      }
+    }
+
+    .social-item-footer {
+      padding-bottom: 8px;
+    }
+    
+    .license {
+      font-size: 10pt;
+    }
+  }
+}
+
+@media all and (max-width: 800px) {
+  .page-footer {
+    margin-top: 40px;
+    height: auto;
+
+    .information-item {
+      h4 {
+        font-size: 12pt;
+      }
+    }
+
+    .footer-list {
+      a {
+        font-size: 8pt;
+      }
+    }
+
+    .license {
+      font-size: 8pt;
+    }
+  }
+}
+
+@media all and (max-width: 560px) {
+  .page-footer {
+    .information-item {
+      padding: 30px 0 10px;
+      width: 100%;
+      text-align: center;
+
+      h4 {
+        padding-bottom: 15px;
+        font-size: 12pt;
+      }
+    }
+
+    .footer-list {
+      a {
+        font-size: 10pt;
+      }
+    }
+
+    .footer-list-item {
+      padding-bottom: 15px;
+    }
+
+    .social-item-footer {
+      padding-bottom: 8px;
+
+      a span {
+        padding-left: 8px;
+      }
+    }
+
+    .license {
+      text-align: center;
+
+      p, span {
+        float: none;
+      }
+    }
+  }
+}
