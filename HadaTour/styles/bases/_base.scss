@@ -1,0 +1,17 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 10px;
+  &::after {
+    clear: both;
+  }
+}
+
+.normal-text {
+  text-decoration: none;
+  color: $txt-color-1;
+}

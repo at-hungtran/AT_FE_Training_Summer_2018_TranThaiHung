@@ -1,0 +1,144 @@
+.tab-search {
+  overflow: auto;
+  padding-top: 60px;
+  background: url('../images/banner-search.png') no-repeat;
+
+  .logo {
+    padding-top: 20px;
+    float: left;
+  }
+
+  .tab {
+    width: calc(100% - 187px);
+    box-sizing: border-box;
+    padding: 0 25px 40px 25px;
+    float: left;
+  }
+
+  .nav-tab {
+    overflow: auto;
+    box-shadow: 0px -1px 0px 0px $border-color inset;
+  }
+
+  .content-tab {
+    width: 100%;
+    padding-top: 30px;
+    float: left;
+  }
+
+  .btn-tab {
+    float: left;
+    padding: 15px 30px;
+    background-color: $bg-color-6;
+    text-align: left;
+  }
+
+  .title-btn {
+    font-size: 25px;
+  }
+
+  .detail-btn {
+    color: $txt-color-2;
+    font-size: 15px;
+  }
+
+  .line {
+    height: 30px;
+    width: 1px;
+    padding-right: 10px;
+    float: left;
+    border-left: solid 1px $border-color;
+  }
+
+  .input-search {
+    margin-right: 8px;
+  }
+
+  .btn-search, .input-search {
+    float: left;
+  }
+
+  #tab-search-tour {
+    border: solid 1px $border-color;
+    border-bottom: solid 1px $border-color-2;
+  }
+
+  #tab-search-hotel {
+    border: none;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .tab-search {
+    .logo {
+      display: none;
+    }
+
+    .input-search, .btn-search, .line {
+      margin-top: 10px;
+    }
+
+    .input-search {
+      width: calc((100% - 170px) / 2);
+    }
+
+    #location-search {
+      width: 100%;
+    }
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  .tab-search {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 950px) {
+  .tab-search {
+    .tab {
+      width: 100%;
+      padding-left: 0;
+    }
+
+    .input-search, .btn-search, .line {
+      margin-top: 10px;
+    }
+
+    .input-search {
+      width: 100%;
+    }
+
+    #location-search {
+      width: 100%;
+    }
+
+    .line {
+      display: none;
+    }
+
+    .title-btn {
+      font-size: 20px;
+    }
+  
+    .detail-btn {
+      font-size: 13px;
+    }
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .tab-search {
+    .btn-tab {
+      padding: 10px 20px;
+    }
+
+    .title-btn {
+      font-size: 15px;
+    }
+  
+    .detail-btn {
+      display: none;
+    }
+  }
+}

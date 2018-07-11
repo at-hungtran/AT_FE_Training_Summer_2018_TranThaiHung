@@ -1,0 +1,80 @@
+.btn {
+  border: none;
+  outline: none;
+  color: $txt-color-0;
+}
+
+.btn-view-more {
+  width: 123px;
+  height: 36px;
+  padding: 0 17px;
+  background: $primary-color;
+  border-radius: 4px;
+  font-size: 12px;
+  text-transform: uppercase;
+  @include hover-transition(rotate(all .2s));
+  &:hover {
+    background-color: #f9b128;
+  }
+  &::after {
+    content: '';
+    width: 6px;
+    height: 9px;
+    margin-top: 2px;
+    float: right;
+    background: url('../images/icon-more-btn.png') no-repeat;
+  }
+  
+  .btn-name {
+    float: left;
+  }  
+}
+
+.btn-search {
+  width: 140px;
+  height: 30px;
+  padding: 0 38px;
+  border-radius: 15px;
+  background-color: $secondary-color;
+
+  .btn-name {
+   float: right;
+  }  
+}
+
+.btn-set-email {
+  width: 80px;
+  height: 48px;
+  background-color: $secondary-color;
+  @include hover-transition(rotate(all .2s));
+  &:hover {
+    background-color: $bg-color-7;
+  }
+}
+
+.btn-blue {
+  width: 120px;
+  height: 40px;
+  text-transform: uppercase;
+  background-color: $secondary-color;
+  padding: 10px 20px;
+  border-radius: 5px;
+  @include hover-transition(rotate(all .2s));
+  &:hover {
+    background-color: $bg-color-7;
+  }
+}
+
+.btn-detail {
+  width: 120px;
+  height: 40px;
+  text-transform: uppercase;
+  background-color: $bg-color-6; 
+  padding: 10px 20px;
+  border: solid 2px $bg-color-0;
+  border-radius: 5px;
+  @include hover-transition(rotate(all .2s));
+  &:hover {
+    background-color: unquote('#ffffff36');
+  }
+}

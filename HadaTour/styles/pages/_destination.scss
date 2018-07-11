@@ -1,0 +1,175 @@
+.destination {
+  width: 100%;
+  overflow: auto; 
+  background-color: $bg-color-1;
+
+  .background {
+    width: 100%;
+    height: 900px;
+    background: $bg-color-1 url('../images/banner-logo.jpg') no-repeat;
+    background-size: cover;
+    position: relative;
+
+    .title-group {
+      text-align: center;
+      top: 40%;
+      left: 0;
+      right: 0;
+      margin: 0 auto;
+      position: absolute;
+      text-transform: uppercase;
+      color: $txt-color-0;
+      line-height: 40px;
+
+      .btn {
+        margin: 22px 2px;
+      }
+    }
+
+    .title-name {
+      font-size: 35px;
+    }
+
+    .title-content {
+      font-size: $font-size-1;
+    }
+  }
+
+  .destination-view-more {
+    position: absolute;
+    bottom: 100px;
+  }
+
+  .title {
+    padding: 8px;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-size: 20px;
+  }
+
+  .title, .btn-view-more {
+    float: left;
+  }
+  
+  .destination-item {
+    width: calc(100% / 4);
+    padding: 7px;
+    box-sizing: border-box;
+    float: left;
+  }
+
+  .destination-hot {
+    position: relative;
+    top: -63px;
+    background-color: $bg-color-1;
+  }
+
+  .border-destination-item {
+    background-color: $bg-color-0;
+    border-radius: 5px;
+    box-shadow: 1px 1px #88888836;
+
+    .destination-image {
+      border-radius: 5px 5px 0 0;
+      width: 100%;
+    }
+
+    .destination-name {
+      text-transform: uppercase;
+      font-weight: bold;
+      font-size: $font-size-2;
+      padding: 10px 15px;
+    }
+
+    .destination-price {
+      display: block;
+      padding: 0 15px 11px;
+      font-size: $font-size-1;
+
+      .price {
+        font-weight: bold;
+        color: $secondary-color;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  .destination {
+    .border-destination-item {
+      .destination-name {
+        font-size: 12px;
+        padding: 7px 10px;
+      }
+
+      .destination-price {
+        padding: 0 10px 11px;
+        font-size: 11px;
+  
+        .price {
+          font-weight: bold;
+          color: $secondary-color;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 950px) {
+  .destination {
+    .destination-item {
+      width: calc(100% / 2);
+    }
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .destination {
+    .background {
+      .title-group {
+        .btn {
+          margin: 17px 2px;
+        }
+      }
+  
+      .title-name {
+        font-size: 20px;
+      }
+  
+      .title-content {
+        font-size: 12px;
+      }
+
+      .title {
+        padding: 8px;
+        font-size: 15px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .destination {
+    overflow: hidden;
+    .background .destination-view-more {
+      width: 100%;
+      text-align: center;
+
+      .title, .btn-view-more {
+        float: none;
+      }
+    }
+
+    .destination-item {
+      width: 100%;
+    }
+  }
+}
+
+@media screen and (max-width: 520px) {
+  .destination {
+    .destination-item {
+      width: 100%;
+    }
+  }
+}

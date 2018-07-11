@@ -1,0 +1,132 @@
+.detail-tour {
+  padding-top: 30px;
+  height: auto;
+  background-color: $bg-color-1;
+
+  .detail-tour-list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding-bottom: 50px;
+
+    .detail-tour-item {
+      background-color: $bg-color-0;
+      flex-basis: 32.5%;
+    }
+
+    .item-border {
+      border-radius: 5px;
+      height: 100%;
+      box-shadow: 1px 1px #88888836;
+    }
+
+    .detail-title {
+      padding: 20px 15px 0;
+      font-size: $font-size-3;
+      text-transform: uppercase;
+    }
+
+    .detail-content {
+      padding: 15px;
+      font-size: $font-size-1;
+      line-height: 20px;
+      color: $txt-color-2;
+    }
+
+    .group-info {
+      position: relative;
+      cursor: pointer;
+    }
+   
+    .first, .second, .thirt {
+      &::before {
+        content: '';
+        width: 100%;
+        height: 100%;
+        background: $bg-color-4;
+        position: absolute;
+        display: block;
+        @include hover-transition(all .2s);
+      }
+      &:hover {
+        &::before {
+          background-color: $bg-color-6;
+        }
+      }
+    }
+
+    .image-tour {
+      width: 100%;
+      display: block;
+    }
+
+    .infor-tour {
+      width: 100%;
+      bottom: 10px;
+      padding: 0 20px;
+      box-sizing: border-box;
+      position: absolute;
+      line-height: 19px;
+      &::before {
+        content: '';
+        width: 30px;
+        height: 30px;
+        padding-right: 15px;
+        float: left;
+        background: url('../images/icon-coconut.png') no-repeat;
+      }
+
+      .tour-name {
+        color: $txt-color-0;
+        font-size: $font-size-1;
+        font-weight: bold;
+      }
+
+      .tour-length {
+        float: left;
+        color: $txt-color-0;
+        font-size: $font-size-2;
+      }
+
+      .tour-price {
+        float: right;
+        text-transform: uppercase;
+        color: $txt-color-0;
+        font-size: $font-size-2;
+      }
+    }
+
+    .more-tour {
+      float: right;
+      display: flex;
+      align-items: center;
+      padding: 10px;
+      font-size: $font-size-1;
+      box-sizing: border-box;
+      &::after {
+        content: '';
+        width: 14px;
+        height: 14px;
+        margin-left: 8px; 
+        background: url('../images/icon-more.png') no-repeat;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1150px) {
+  .detail-tour {
+    .detail-tour-list .detail-tour-item {
+        flex-basis: 49%;
+        margin-bottom: 20px;
+    }
+  }
+}
+
+@media screen and (max-width: 940px) {
+  .detail-tour {
+    .detail-tour-list .detail-tour-item {
+        flex-basis: 100%;
+    }
+  }
+}
