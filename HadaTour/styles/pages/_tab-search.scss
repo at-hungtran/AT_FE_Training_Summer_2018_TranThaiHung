@@ -1,5 +1,4 @@
 .tab-search {
-  overflow: auto;
   padding-top: 60px;
   background: url('../images/banner-search.png') no-repeat;
 
@@ -16,7 +15,8 @@
   }
 
   .nav-tab {
-    overflow: auto;
+    width: 100%;
+    float: left;
     box-shadow: 0px -1px 0px 0px $border-color inset;
   }
 

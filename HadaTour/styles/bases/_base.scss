@@ -7,8 +7,16 @@ body {
   margin: 0 auto;
   padding: 0 10px;
   &::after {
+    content: '';
+    display: block;
     clear: both;
   }
+}
+
+.clearfix::after {
+  content: '';
+  display: block;
+  clear: both;
 }
 
 .normal-text {

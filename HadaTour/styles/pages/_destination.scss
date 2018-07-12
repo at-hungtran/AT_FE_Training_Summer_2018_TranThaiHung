@@ -1,6 +1,5 @@
 .destination {
   width: 100%;
-  overflow: auto; 
   background-color: $bg-color-1;
 
   .background {
@@ -61,7 +60,6 @@
   .destination-hot {
     position: relative;
     top: -63px;
-    background-color: $bg-color-1;
   }
 
   .border-destination-item {
@@ -150,7 +148,6 @@
 
 @media screen and (max-width: 600px) {
   .destination {
-    overflow: hidden;
     .background .destination-view-more {
       width: 100%;
       text-align: center;

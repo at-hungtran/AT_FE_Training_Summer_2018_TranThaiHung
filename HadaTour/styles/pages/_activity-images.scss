@@ -1,8 +1,6 @@
 .activity-images {
   padding-top: 40px;
-  overflow: auto;
   background-color: $bg-color-1;
-
 
   .group-head {
     width: 300px;
@@ -112,10 +110,8 @@
 
 @media screen and (max-width: 1248px) {
   .activity-images {
-    .tour-group-border {
-      .image-name {
-        font-size: 13px;
-      }
+    .tour-group-border .image-name {
+      font-size: 13px;
     }
   }
 }
@@ -125,7 +121,7 @@
     .tour-group-list .tour-group-item {
       flex-basis: 30%;
       padding-bottom: 20px;
-    } 
+    }
   }
 }
 
@@ -143,7 +139,6 @@
 
 @media screen and (max-width: 450px) {
   .activity-images {
-    overflow: visible;
     .group-head {
       text-align: center;
 
