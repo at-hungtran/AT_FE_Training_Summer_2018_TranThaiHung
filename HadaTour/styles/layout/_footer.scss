@@ -1,0 +1,252 @@
+.page-footer {
+  padding-top: 30px;
+
+  .main-footer {
+    padding-top: 25px;
+    box-sizing: border-box;
+
+    .logo {
+      padding-top: 15px;
+      float: left;
+    }
+
+    .footer-element {
+      width: calc((100% - 187px) / 2);
+    }
+
+    .footer-list {
+      padding-left: 50px;
+      float: left;
+      box-sizing: border-box;
+    }
+
+    .footer-item {
+      width: 50%;
+      box-sizing: border-box;
+      float: left;
+      padding-left: 60px;
+
+      .title {
+        font-size: 15px;
+        font-weight: bold;
+        text-transform: uppercase;
+      }
+
+      .list {
+        padding-top: 10px;
+        line-height: 30px;
+
+        .item {
+          font-size: $font-size-1;
+          color: $txt-color-5;
+        }
+
+        .normal-text {
+          display: flex;
+          align-items: center;
+          @include hover-transition(all .2s);
+          &:hover {
+            color: $secondary-color;
+          }
+
+          .social-item {
+            display: flex;
+            align-items: center;
+          }
+        }
+
+        .icon {
+          padding-right: 10px;
+        }
+      }
+    }
+
+    .email-form {
+      box-sizing: border-box;
+      float: left;
+      padding: 25px 0 0 66px;
+    
+      .guide {
+        font-size: $font-size-1;
+      }
+
+      .set-mail-form {
+        padding-top: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+      }
+    }
+  }
+
+  .bottom-footer {
+    height: 30px;
+    padding-top: 25px;
+
+    .left-side {
+      float: left;
+    }
+
+    .right-side {
+      float: right;
+    }
+
+    .text-green {
+      color: $txt-color-4;
+      font-size: $font-size-1;
+    }
+  }
+}
+
+@media screen and (max-width: 1310px) {
+  .page-footer {
+    .main-footer {
+      .logo {
+        width: 150px;
+      }
+
+      .footer-list {
+        padding-left: 20px;
+      }
+
+      .email-form {
+        padding: 25px 0 0 40px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1240px) {
+  .page-footer {
+    .main-footer {
+      .logo {
+        display: none;
+      }
+
+      .footer-element {
+        width: 50%;
+      }
+
+      .footer-list {
+        padding-left: 0;
+      }
+
+      .footer-item {
+        width: 50%;
+        padding-left: 0;
+  
+        .list {
+          padding-top: 10px;
+  
+          .item {
+            font-size: 12px;
+          }
+        }
+      }
+
+      .email-form {
+        float: right;
+      
+        .guide {
+          font-size: 12px;
+        }
+      }
+    }
+
+    .bottom-footer {
+      font-size: 13px;
+    }
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .page-footer {
+    .main-footer {
+      .footer-element{
+        width: 100%;
+      }
+
+      .email-form {
+        padding: 0;
+      
+        .guide {
+          padding-top: 20px;
+          font-size: 12px;
+        }
+
+        .btn-set-email {
+          height: 37px;
+        }
+
+        .input-mail {
+          font-size: 12px;
+          height: 35px;
+        }
+      }
+    }
+
+    .bottom-footer {
+      font-size: 13px;
+    }
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .page-footer {
+    .main-footer {
+      .footer-item {
+        width: 100%;
+        
+        .title {
+          text-align: center;
+        }
+
+        .list {
+          text-align: center;
+  
+          .item {
+            display: inline-block;
+          }
+
+          .icon {
+            padding: 0 2px 0 1px;
+          }
+        }
+      }
+
+      .email-form {
+        .guide {
+          padding-top: 20px;
+          font-size: 12px;
+          text-align: center;
+        }
+
+        .btn-set-email {
+          height: 37px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .page-footer {
+    .bottom-footer {
+      padding: 25px 0 30px 0;
+      line-height: 20px;
+  
+      .left-side, .right-side  {
+        float: none;
+        text-align: center
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .page-footer {
+    .icon {
+      display: none;
+    }
+  }
+}

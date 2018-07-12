@@ -1,0 +1,160 @@
+.activity-images {
+  padding-top: 40px;
+  background-color: $bg-color-1;
+
+  .group-head {
+    width: 300px;
+    height: auto;
+
+    .title {
+      padding-top: 7px;
+      text-transform: uppercase;
+      font-weight: bold;
+      font-size: 18px;
+      float: left;
+    }
+  
+    .btn-view-more {
+      float: right;
+    }
+  }
+
+  .tour-group-list {
+    float: left;
+    padding: 40px 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    .tour-group-item {
+      flex-basis: 23%;
+      box-sizing: border-box;
+    }
+  }
+
+  .tour-group-border {
+    background-color: $bg-color-2;
+    border-radius: 5px;
+    height: auto;
+
+    .group-image {
+      position: relative;
+      cursor: pointer;
+      overflow: hidden;
+      border-radius: 5px 5px 0 0;
+      &::before {
+        content: '';
+        position: absolute;
+        border-radius: 5px 5px 0 0;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background-image: linear-gradient(to bottom, unquote('#f8f8f800'), unquote('#000000de'));
+        opacity: .6; 
+      }
+      &:hover {
+        .activity-image {
+          border-radius: 5px 5px 0 0;
+          transform: scale(1.1);
+          @include hover-transform(rotate(scale(1.1)));
+        }
+      }
+    }
+
+    .activity-image {
+      width: 100%;
+      border-radius: 5px 5px 0 0;
+      @include hover-transition(all .3s);
+    }
+
+    .image-name {
+      bottom: 15px;
+      padding-left: 10px;
+      position: absolute;
+      color: $txt-color-0;
+      font-size: 17px;
+      font-weight: bold;
+      line-height: 20px;
+
+      .break {
+        display: block;
+      }
+
+      .normal-text {
+        color: $txt-color-0;
+      }
+    }
+
+    .activity-image {
+      display: block;
+    }
+
+    .text-bottom {
+      height: 40px;
+      padding: 0 10px;
+      font-size: 12px;
+      line-height: 40px;
+      color: $txt-color-6;
+    }
+
+    .length-tour {
+      float: left;
+    }
+
+    .date-tour {
+      float: right;
+    }
+  }
+}
+
+@media screen and (max-width: 1248px) {
+  .activity-images {
+    .tour-group-border .image-name {
+      font-size: 13px;
+    }
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .activity-images {
+    .tour-group-list .tour-group-item {
+      flex-basis: 30%;
+      padding-bottom: 20px;
+    }
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .activity-images {
+    .group-head {
+      margin: 0 auto;
+    }
+  
+    .tour-group-list .tour-group-item {
+      flex-basis: 48%;
+    }
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .activity-images {
+    .group-head {
+      text-align: center;
+
+      .title {
+        font-size: 18px;
+        float: none;
+      }
+    
+      .btn-view-more {
+        margin-top: 10px;
+        float: none;
+      }
+    }
+
+    .tour-group-list .tour-group-item {
+      flex-basis: 99%;
+    }
+  }
+}

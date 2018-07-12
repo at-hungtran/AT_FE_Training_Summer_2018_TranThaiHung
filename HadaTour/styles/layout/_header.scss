@@ -1,0 +1,124 @@
+.page-header {
+  padding-top: 15px;
+  height: 100px;
+
+  .header-left {
+    float: left;
+  }
+  
+  .header-right {
+    width: calc(100% - 137px);
+    float: right;
+  }
+
+  .contact {
+    width: 100%;
+    font-size: $font-size-1;
+    float: right;
+  }
+
+  .contact-element::before {
+    content: "";
+    width: 32px;
+    height: 32px;
+    margin-top: 5px;
+    padding-right: 10px;
+    float: left;
+  }
+
+  .element-left {
+    width: 20%;
+    padding-right: 30px;
+    line-height: 20px;
+    float: right;
+    &::before {
+      background: url('../images/icon-phone-header.png') no-repeat;
+    }
+  }
+
+  .element-right {
+    width: 34%;
+    line-height: 20px;
+    float: right;
+    &::before {
+      background: url('../images/icon-contact.png') no-repeat;
+    }
+  }
+
+  .header-text {
+    width: calc(100% - 42px);
+    float: left;
+  }
+
+  .phone-number {
+    color: $primary-color;
+    font-weight: bold;
+  }
+
+  .nav-bar {
+    float: right;
+    text-transform: uppercase;
+  }
+
+  .icon-menu {
+    display: none;
+  }
+
+  .menu-item {
+    float: left;
+    padding: 23px 0 23px 27px;
+    font-size: 15px;
+    .normal-text {
+      @include hover-transition(all .3s);
+      &:hover {
+        color: $primary-color;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1248px) {
+  .page-header {
+    .menu-item {
+      float: left;
+      padding: 23px 0 23px 25px;
+      font-size: 12px;
+    }
+
+    .contact {
+      font-size: 12px;
+      float: right;
+    }
+
+    .element-left {
+      width: 25%;
+    }
+  
+    .element-right {
+      width: 40%;
+    }
+  }
+}
+
+@media screen and (max-width: 1040px) {
+  .page-header {
+    .logo {
+      padding-top: 10px;
+      width: 100px;
+    }
+
+    .menu-list {
+      display: none;
+    }
+
+    .icon-menu {
+      margin-top: 30px;
+      display: block;
+      float: right;
+    }
+
+    .element-left, .element-right {
+      display: none;
+    }
+  }
+}
